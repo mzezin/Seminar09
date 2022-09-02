@@ -10,9 +10,10 @@ void PrintArray(int[] array)
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        if (i == array.Length - 1) Console.Write(array[i] + "]");
+        if (i == array.Length - 1) Console.Write(array[i]);
         else Console.Write(array[i] + ", ");
     }
+    Console.WriteLine("]");
 }
 
 int[] processInput() //на вход получает массив данных от пользователя через запятую и на выходе выдаёт массив
