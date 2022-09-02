@@ -29,3 +29,25 @@ int[] processInput() //на вход получает массив данных 
     return result;
 }
 
+int[] SelectArray(int[] array)
+{
+    //магия
+    int countEven = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] % 2 == 0)
+            countEven++;
+    }
+
+    int[] result = new int[countEven];
+    int resultIndex = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] % 2 == 0)
+        {
+            result[resultIndex] = array[i];
+            resultIndex++;
+        }
+    }
+    return result;
+}
