@@ -52,3 +52,7 @@ int[] SelectArray(int[] array)
     }
     return result;
 }
+
+int[] array = processInput();
+int[] evenArray = SelectArray(array);
+PrintArray(evenArray);
